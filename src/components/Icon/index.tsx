@@ -6,5 +6,5 @@ type IconProps = {
 }
 
 export default function Icon({ icon: Icon, className }: IconProps) {
-  return <Icon className={className} />
+  return <Icon className={`${className} hover:opacity-75 transition-all cursor-pointer`} />
 }
