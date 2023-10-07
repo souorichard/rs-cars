@@ -1,13 +1,11 @@
-import { useFetch } from '../../../../hooks/useFetch';
+import { cars } from '../../../../mocks/mocks';
 import Card from '../Card';
 
 export default function List() {
-  const { data } = useFetch();
-
   return (
     <div className="w-full px-3 flex flex-wrap gap-6">
-      {data?.map((car) => (
-        <Card key={car.id} model={car.nome} />
+      {cars.map((car) => (
+        <Card key={car.id} model={car.model} category={car.category} />
       ))}
     </div>
   )

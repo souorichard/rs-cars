@@ -1,8 +1,4 @@
-export type Car = {
-  id: number
-  nome: string
-}
-
-export type CarResponse = {
-  data: Car[]
+export type CarProps = {
+  model: string
+  category: string
 }
